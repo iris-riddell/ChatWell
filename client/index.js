@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import reducers from './reducers'
+
 // components below
 import App from './components/App'
 import ClientTopics from './components/ClientTopics'

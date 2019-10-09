@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+
 import { randomName, randomAvatar } from '../utilities'
 import { ThemeProvider } from 'styled-components'
 import { setUsername } from '../actions/username'
-// import { GridForm, ColOne, ColTwo,  } from './Styled'
 import Button from './elements/Button'
 import Header from './Header'
 import TitleArea from './elements/TitleArea'
@@ -35,7 +35,6 @@ class Register extends React.Component {
 
   handleContinue = () => {
     this.props.dispatch(setUsername(this.state.username))
-    // this.props.history.push('/guidance')
   }
 
   generateUsername = () => {

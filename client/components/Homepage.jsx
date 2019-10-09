@@ -21,24 +21,12 @@ class Homepage extends React.Component {
     userType: ''
   }
 
-  // componentDidMount () {
-  //   this.dispatch(userTypeSelected())
-  // }
-
   handleClient = () => {
-    // this.setState({
-    //   userType: 'client'
-    // }, () => {
     this.props.dispatch(getUserType('client'))
-    // })
   }
 
   handleSponsor = () => {
-    // this.setState({
-    //   userType: 'sponsor'
-    // }, () => {
     this.props.dispatch(getUserType('sponsor'))
-    // })
   }
 
   render () {

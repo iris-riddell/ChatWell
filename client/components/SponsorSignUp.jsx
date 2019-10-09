@@ -2,12 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
-// import Button from './elements/Button'
 import { isAuthenticated, register } from 'authenticare/client'
 
 import { randomName, randomAvatar } from '../utilities'
 import { setUsername } from '../actions/username'
-// import { GridForm, ColOne, ColTwo } from './Styled'
 import Header from './Header'
 import TitleArea from './elements/TitleArea'
 import Footer from './Footer'
@@ -45,7 +43,6 @@ class SponsorSignUp extends React.Component {
       .then((token) => {
         if (isAuthenticated()) {
           this.props.dispatch(setUsername(this.state.username))
-          // this.props.history.push('/sponsor/guidance')
         }
       })
   }

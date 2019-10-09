@@ -1,6 +1,3 @@
-// import { error } from './error'
-// import fetchUsername from '../api/fetchUsername'
-
 export const GET_USERNAME_PENDING = 'GET_USERNAME_PENDING'
 export const GET_USERNAME_SUCCESS = 'GET_USERNAME_SUCCESS'
 export const SELECTED_USERNAME = 'SELECTED_USERNAME'

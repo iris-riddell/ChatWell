@@ -10,7 +10,6 @@ import TitleArea from './elements/TitleArea'
 import { getTopics, saveTopics } from '../actions/topics'
 import Topic from './Topic'
 import Footer from './Footer'
-// import ScrollDiv from './Styled'
 
 const theme = {
   primary: '#80ced6',

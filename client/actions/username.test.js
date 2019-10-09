@@ -31,10 +31,4 @@ describe('username action tests', () => {
     const action = getUsernameSuccess(userType)
     expect(action.type).toBe(GET_USERNAME_SUCCESS)
   })
-
-  // it('setUsername returns a marvin as SELECTED_USERNAME action', () => {
-  //   const userType = 'marvin'
-  //   const action = setUsername(userType)
-  //   expect(action.userType).toBe('marvin')
-  // })
 })

@@ -25,7 +25,6 @@ export const ScrollDiv = styled.div`
  overflow: scroll;
  margin-inline-start: 35vw;
  `
-=======
 export const Button = styled.button`
   grid-column: 2;
   width: 50%;

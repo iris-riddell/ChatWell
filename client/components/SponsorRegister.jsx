@@ -36,7 +36,6 @@ class SponsorRegister extends React.Component {
 
   handleContinue = () => {
     this.props.dispatch(setUsername(this.state.username))
-    // this.props.history.push('/guidance')
   }
 
   generateUsername = () => {

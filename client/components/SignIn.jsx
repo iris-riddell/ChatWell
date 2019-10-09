@@ -4,12 +4,8 @@ import { connect } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 
 import Button from './elements/Button'
-// import Div from './elements/Div'
 import Footer from './Footer'
 import Header from './Header'
-
-// import { GridForm, ColOne, ColTwo } from './Styled'
-// import Button from './elements/Button'
 
 import { isAuthenticated, signIn } from 'authenticare/client'
 import { getUserType } from '../actions/typeOfUser'

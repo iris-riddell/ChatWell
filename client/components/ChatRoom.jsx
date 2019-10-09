@@ -207,22 +207,14 @@ class ChatRoom extends Component {
               <MessageInput type="text" value={this.state.message} onChange={this.messageInputHandler} disabled={!this.state.isConnected} ref={this.textInput} />
               <SendButton type='submit' disabled={!this.state.isConnected} >Send</SendButton>
             </SendMessageForm>
-            {/* {!this.state.isConnected && < ConnectionButton type="button" onClick={this.connectHandler} connect >CONNECT</ConnectionButton>} */}
-            {/* {this.state.isConnected && < ConnectionButton type="button" onClick={this.disconnectHandler} disconnect >Disconnect</ConnectionButton>} */}
           </FlexContainer>
           {(this.state.usertype === 'client')
             ? !this.state.isConnected && <Button type="button" onClick={this.connectHandler} color="client" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>CONNECT</Button>
             : !this.state.isConnected && <Button type="button" onClick={this.connectHandler} color="primary" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>CONNECT</Button>
           }
-          {/* {!this.state.isConnected && <Button type="button" onClick={this.connectHandler} color="primary" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>CONNECT</Button>} */}
           {this.state.isConnected && <Button type="button" onClick={this.disconnectHandler} style={{ fontFamily: 'Lato', fontWeight: 'bold', backgroundColor: '#F66767' }}>DISCONNECT</Button>}
           <br />
           <Footer />
-          {/* {(this.state.usertype === 'client')
-            ? <Link to='/' onClick={this.disconnectHandler} style={{ textDecoration: 'none' }}><Button color="clientSecondary" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>BACK TO MAIN</Button></Link>
-            :  <Link to='/' onClick={this.disconnectHandler} style={{ textDecoration: 'none' }}><Button color="secondary" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>BACK TO MAIN</Button></Link>
-          } */}
-          {/* <Link to='/' onClick={this.disconnectHandler} style={{ textDecoration: 'none' }}><Button color="secondary" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>BACK TO MAIN</Button></Link> */}
         </ThemeProvider>
       </>
     )
