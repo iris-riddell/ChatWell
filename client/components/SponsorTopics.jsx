@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
 import Button from './elements/Button'
-import Header from './Header'
+import Nav from './Nav'
 import TitleArea from './elements/TitleArea'
 import { getTopics, saveTopics } from '../actions/topics'
 import Topic from './Topic'
@@ -56,7 +56,7 @@ class SponsorTopics extends React.Component {
         <ThemeProvider theme={theme} >
           <div style={{ height: '100vh', overflow: 'hidden' }}>
             {error && <div>{error}</div>}
-            <Header />
+            <Nav />
             <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Select topics</TitleArea>
             <h4 className="sponsor-font" style={{ textAlign: 'center', fontSize: '18px' }}>I can help with...</h4>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>

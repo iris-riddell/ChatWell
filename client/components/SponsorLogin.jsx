@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import Button from './elements/Button'
-import Header from './Header'
+import Nav from './Nav'
 import Footer from './Footer'
 
 const theme = {
@@ -21,7 +21,7 @@ class SponsorLogin extends React.Component {
 
     <ThemeProvider theme={theme}>
       <div style={{ height: '100vh', overflow: 'hidden' }}>
-        <Header />
+        <Nav />
 
         <h2 style={{ textAlign: 'center' }}>Already helping out?</h2>
         <Link to='/sponsor/signin' style={{ textDecoration: 'none' }}><Button color="primary" style={{ fontFamily: 'Lato', fontWeight: 'bold' }}>Sign in</Button></Link>

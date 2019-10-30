@@ -8,7 +8,6 @@ export const GridForm = styled.form`
 `
 
 export const HelpButton = styled.button`
-  font-family: ${(props) => props.theme.font};
   font-size: 1.1rem;
   font-weight: bold;
   box-shadow: 0px 5px 5px #888888;
@@ -23,9 +22,9 @@ export const HelpButton = styled.button`
   max-width: 600px;
   margin: auto;
 `
+// font-family: ${(props) => props.theme.font};
 
 export const GetHelpButton = styled.button`
-  font-family: ${(props) => props.theme.font};
   font-size: 1.1rem;
   font-weight: bold;
   box-shadow: 0px 5px 5px #888888;

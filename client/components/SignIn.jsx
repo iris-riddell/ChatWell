@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 
 import Button from './elements/Button'
 import Footer from './Footer'
-import Header from './Header'
+import Nav from './Nav'
 
 import { isAuthenticated, signIn } from 'authenticare/client'
 import { getUserType } from '../actions/typeOfUser'
@@ -50,7 +50,7 @@ function SignIn (props) {
   <div className="hero flex-center">
     <ThemeProvider theme={theme}>
       <div style={{ height: '100vh', overflow: 'hidden' }}>
-        <Header />
+        <Nav />
         <h1 style={{ textAlign: 'center' }}>Sign In</h1>
         <h2 style={{ textAlign: 'center' }}>Username:</h2>
         <div className="input">

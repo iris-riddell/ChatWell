@@ -6,7 +6,7 @@ import { getTopics, saveTopics } from '../actions/topics'
 import Topic from './Topic'
 import { ThemeProvider } from 'styled-components'
 import Footer from './Footer'
-import Header from './Header'
+import Nav from './Nav'
 import TitleArea from './elements/TitleArea'
 
 const theme = {
@@ -53,7 +53,7 @@ class ClientTopics extends React.Component {
         <ThemeProvider theme={theme}>
           <div style={{ height: '100vh', overflow: 'hidden' }}>
             {error && <div>{error}</div>}
-            <Header />
+            <Nav />
             <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Select Topics</TitleArea>
             <h4 className="sponsor-font" style={{ textAlign: 'center', fontSize: '18px' }}>I need help with...</h4>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>

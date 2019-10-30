@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import Header from './Header'
+import Nav from './Nav'
 import Footer from './Footer'
 import { HelpButton, GetHelpButton } from './Styled'
 import Div from './elements/Div'
@@ -33,7 +33,7 @@ class Homepage extends React.Component {
     return (
       <div className="div">
           <div style={{ height: '100vh', overflow: 'hidden' }}>
-          <Header />
+          <Nav />
           <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '20px', fontWeight: 'bold' }}>Sometimes you just need to talk to someone. We can help with that.</TitleArea>
           <Div> 
             <Link to='/topics' style={{ textDecoration: 'none' }}><GetHelpButton onClick={this.handleClient}>I NEED HELP</GetHelpButton></Link>

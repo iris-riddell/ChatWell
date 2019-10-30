@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { randomName, randomAvatar } from '../utilities'
 import { setUsername } from '../actions/username'
-import Header from './Header'
+import Nav from './Nav'
 import TitleArea from './elements/TitleArea'
 import Footer from './Footer'
 import Button from './elements/Button'
@@ -49,7 +49,7 @@ class SponsorRegister extends React.Component {
       <div className="hero flex-center">
         <ThemeProvider theme={theme}>
           <div style={{height: '100vh', overflow: 'hidden'}}>
-          <Header />
+          <Nav />
           <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Write a nickname for yourself or click the button below to randomise one:</TitleArea>
           <br />
           <div className="input">

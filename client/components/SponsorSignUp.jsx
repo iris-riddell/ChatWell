@@ -6,7 +6,7 @@ import { isAuthenticated, register } from 'authenticare/client'
 
 import { randomName, randomAvatar } from '../utilities'
 import { setUsername } from '../actions/username'
-import Header from './Header'
+import Nav from './Nav'
 import TitleArea from './elements/TitleArea'
 import Footer from './Footer'
 import Button from './elements/Button'
@@ -59,7 +59,7 @@ class SponsorSignUp extends React.Component {
         <ThemeProvider theme={theme}>
         <div style={{height: '100vh', overflow: 'hidden'}}>
 
-          <Header />
+          <Nav />
           <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Choose your nickname and password. You can also randomise a nickname by clicking the button below.</TitleArea>
           <br />
           <br />

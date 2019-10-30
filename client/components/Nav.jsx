@@ -6,7 +6,7 @@ import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 
 import HeaderTag from './elements/HeaderTag'
 
-class Header extends React.Component {
+class Nav extends React.Component {
   render () {
     return (
       <div>
@@ -30,4 +30,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default Nav

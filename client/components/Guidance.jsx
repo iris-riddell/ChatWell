@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import Button from './elements/Button'
 import Footer from './Footer'
-import Header from './Header'
+import Nav from './Nav'
 import TitleArea from './elements/TitleArea'
 
 const theme = {
@@ -18,7 +18,7 @@ function Guidance (props) {
     <div className="hero-client flex-center">
       <ThemeProvider theme={theme}>
       <div style={{ height: '100vh', overflow: 'hidden' }}>
-        <Header />
+        <Nav />
         <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Please keep in mind...</TitleArea>
         <br/>
         <p className="client-font" style={{ paddingLeft: "200px", paddingRight: "200px", fontSize: "18px", textAlign: 'center' }}>

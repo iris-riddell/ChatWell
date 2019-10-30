@@ -13,7 +13,7 @@ import {
   ConnectionButton,
   Message
 } from './ChatRoomStyles'
-import Header from './Header'
+import Nav from './Nav'
 import Button from './elements/Button'
 import Footer from './Footer'
 
@@ -181,7 +181,7 @@ class ChatRoom extends Component {
     return (
       <>
         <ThemeProvider theme={theme}>
-          <Header />
+          <Nav />
           <FlexContainer>
             <MessagesContainer id='scroll-container'>
               {this.state.messages.map((message, i) => {
