@@ -37,7 +37,7 @@ ${(props) => props.color && css` background: ${props => props.theme[props.backgr
 export const HelpButton = styled.button`
   font-size: 1.1rem;
   font-weight: bold;
-  box-shadow: 0px 5px 5px #888888;
+  box-shadow: 0px 5px 5px #006745;
   background-color: #80ced6;
   border: none;
   width: 1000px;
@@ -48,13 +48,21 @@ export const HelpButton = styled.button`
   display: block;
   max-width: 600px;
   margin: auto;
+&:hover {
+  background: #a3cfae;
+}
 `
 // font-family: ${(props) => props.theme.font};
+// ${(props) => props.font && css` background: ${props => props.theme[props.font]};
+// `}
+/* background: ${props => (props.primary ? 'red' : 'green')}; */
+// ${(props) => props.color && css` background: ${props => props.theme[props.color]};
+// `}
 
 export const GetHelpButton = styled.button`
   font-size: 1.1rem;
   font-weight: bold;
-  box-shadow: 0px 5px 5px #888888;
+  box-shadow: 0px 5px 5px #006745;
   background-color: #009999;
   border: none;
   width: 1000px;
@@ -65,6 +73,9 @@ export const GetHelpButton = styled.button`
   display: block;
   max-width: 600px;
   margin: auto;
+  &:hover {
+  background: #a3cfae;
+}
 `
 
 export const ColOne = styled.span`

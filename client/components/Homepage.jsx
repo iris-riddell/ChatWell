@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import Nav from './Nav'
 import Footer from './Footer'
 import { Header, Background, HelpButton, GetHelpButton } from './Styled'
-import Div from './elements/Div'
 import { getUserType } from '../actions/typeOfUser'
 
 const theme = {
