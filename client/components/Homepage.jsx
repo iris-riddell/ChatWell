@@ -7,6 +7,8 @@ import Footer from './Footer'
 import { Header, Background, HelpButton, GetHelpButton } from './Styled'
 import { getUserType } from '../actions/typeOfUser'
 
+// I'm not too sure if this theme variable is needed but I'm leaving it for now. Will come back to later.
+
 const theme = {
   primary: '#009999;',
   secondary: '#80ced6',
@@ -29,18 +31,18 @@ class Homepage extends React.Component {
 
   render () {
     return (
-          <div style={{ height: '100vh', overflow: 'hidden' }}>
-          <Nav />
-          <Header style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '20px', fontWeight: 'bold' }}>Sometimes you just need to talk to someone. We can help with that.</Header>
-          <Background> 
-            <Link to='/topics' style={{ textDecoration: 'none' }}><GetHelpButton onClick={this.handleClient}>I NEED HELP</GetHelpButton></Link>
+      <>
+        <Nav />
+        <Header>Sometimes you just need to talk to someone. We can help with that.</Header>
+        <Background> 
+          <Link to='/topics' style={{ textDecoration: 'none' }}><GetHelpButton onClick={this.handleClient}>I NEED HELP</GetHelpButton></Link>
 
-            <div style={{ height: '100px' }}></div>
+          <div style={{ height: '100px' }}></div>
 
-            <Link to='/sponsor/login' style={{ textDecoration: 'none' }}><HelpButton onClick={this.handleSponsor}>I WANT TO HELP</HelpButton></Link>
-          </Background>
-            <Footer />
-          </div>   
+          <Link to='/sponsor/login' style={{ textDecoration: 'none' }}><HelpButton onClick={this.handleSponsor}>I WANT TO HELP</HelpButton></Link>
+        </Background>
+        <Footer />
+      </>   
     )
   }
 }
