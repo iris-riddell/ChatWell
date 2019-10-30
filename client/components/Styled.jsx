@@ -21,6 +21,19 @@ font-weight:lighter;
   background-color: #80ced6;
 `
 
+export const Background = styled.div`
+background-image: url('/images/images7.jpg');
+height: 70vh;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+${(props) => props.color && css` background: ${props => props.theme[props.background]};
+`} 
+`
+
 export const HelpButton = styled.button`
   font-size: 1.1rem;
   font-weight: bold;
