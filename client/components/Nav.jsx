@@ -1,31 +1,47 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import { logOff } from 'authenticare/client'
+import styled from 'styled-components'
+
 import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 
-import HeaderTag from './elements/HeaderTag'
+import { HeaderTag } from './Styled'
+
+const Navbar = styled.div`
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+`
+
+const NavLink = styled(Link)`
+  color: #090934;
+  font-family: 'Lato';
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  &:hover {
+    background: #a3cfae;
+  }
+`
 
 class Nav extends React.Component {
   render () {
     return (
-      <div>
-        <HeaderTag style={{ color: '#090934', padding: '0px' }}>ChatWell</HeaderTag>
+      <>
         <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet"></link>
-        <div className="w3-top">
-          <div className="w3-bar" id="myNavbar">
-            <IfAuthenticated>
-              <Link to='/' data-testid='logoff' style={{ color: '#090934', fontWeight: 'bold' }} className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-green"
-                onClick={logOff}>LOG OFF</Link>
-            </IfAuthenticated>
-            <IfNotAuthenticated>
-              <Link to='/sponsor/register' style={{ color: '#090934', fontWeight: 'bold' }} className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-green" data-testid='register'>REGISTER</Link>
-              <Link to='/sponsor/signin' style={{ color: '#090934', fontWeight: 'bold' }} className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-green" data-testid='signin'>SIGN IN</Link>
-            </IfNotAuthenticated>
-            <a href="/" style={{ color: '#090934', fontWeight: 'bold' }} className="w3-bar-item w3-button w3-hover-green">HOME</a>
-          </div>
-        </div>
-      </div>
+        <Navbar>
+          <NavLink to="/">HOME</NavLink>
+          <IfAuthenticated>
+            <NavLink to='/' data-testid='logoff'
+              onClick={logOff}>LOG OFF</NavLink>
+          </IfAuthenticated>
+          <IfNotAuthenticated>
+            <NavLink to='/sponsor/register' data-testid='register'>REGISTER</NavLink>
+            <NavLink to='/sponsor/signin' data-testid='signin'>SIGN IN</NavLink>
+          </IfNotAuthenticated>
+        </Navbar>
+        <HeaderTag>ChatWell</HeaderTag>
+      </>
     )
   }
 }
