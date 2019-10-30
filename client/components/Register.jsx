@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components'
 import { setUsername } from '../actions/username'
 import Button from './elements/Button'
 import Nav from './Nav'
-import TitleArea from './elements/TitleArea'
+import { Header } from './Styled'
 import Footer from './Footer'
 
 const theme = {
@@ -49,7 +49,7 @@ class Register extends React.Component {
         <ThemeProvider theme={theme}>
           <div style={{ height: '100vh', overflow: 'hidden' }}>
             <Nav />
-            <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Write a nickname for yourself or click the button below to randomise one:</TitleArea>
+            <Header style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Write a nickname for yourself or click the button below to randomise one:</Header>
             <br />
             <div className="input">
               <input className="input" type="text" value={this.state.username} onChange={this.handleChange} />

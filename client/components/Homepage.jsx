@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom'
 
 import Nav from './Nav'
 import Footer from './Footer'
-import { HelpButton, GetHelpButton } from './Styled'
+import { Header, HelpButton, GetHelpButton } from './Styled'
 import Div from './elements/Div'
-import TitleArea from './elements/TitleArea'
 import { getUserType } from '../actions/typeOfUser'
 
 const theme = {
@@ -34,7 +33,7 @@ class Homepage extends React.Component {
       <div className="div">
           <div style={{ height: '100vh', overflow: 'hidden' }}>
           <Nav />
-          <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '20px', fontWeight: 'bold' }}>Sometimes you just need to talk to someone. We can help with that.</TitleArea>
+          <Header style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '20px', fontWeight: 'bold' }}>Sometimes you just need to talk to someone. We can help with that.</Header>
           <Div> 
             <Link to='/topics' style={{ textDecoration: 'none' }}><GetHelpButton onClick={this.handleClient}>I NEED HELP</GetHelpButton></Link>
 

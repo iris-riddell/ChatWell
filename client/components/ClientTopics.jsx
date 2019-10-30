@@ -7,7 +7,7 @@ import Topic from './Topic'
 import { ThemeProvider } from 'styled-components'
 import Footer from './Footer'
 import Nav from './Nav'
-import TitleArea from './elements/TitleArea'
+import { Header } from './Styled'
 
 const theme = {
   primary: '#009999',
@@ -54,7 +54,7 @@ class ClientTopics extends React.Component {
           <div style={{ height: '100vh', overflow: 'hidden' }}>
             {error && <div>{error}</div>}
             <Nav />
-            <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Select Topics</TitleArea>
+            <Header style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Select Topics</Header>
             <h4 className="sponsor-font" style={{ textAlign: 'center', fontSize: '18px' }}>I need help with...</h4>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
               <ul className="sponsor-font" style={{ background: 'transparent', width: '30vw', height: '45vh', textAlign: 'left', overflowY: 'scroll', marginBottom: '25px' }}>

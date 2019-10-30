@@ -6,6 +6,20 @@ export const GridForm = styled.form`
   grid-gap: 10px;
   grid-template-columns: auto 1fr;
 `
+export const Header = styled.title`
+/* width: 100%;
+height: 160px; */
+text-align: center;
+/* background-image: url('/images/image11.jpg'); */
+border: none;
+border-radius: none;
+padding:26px;
+font-weight:lighter;
+  text-align:center;
+  display:block;
+  margin:0px;
+  background-color: #80ced6;
+`
 
 export const HelpButton = styled.button`
   font-size: 1.1rem;

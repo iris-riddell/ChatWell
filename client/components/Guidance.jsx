@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Button from './elements/Button'
 import Footer from './Footer'
 import Nav from './Nav'
-import TitleArea from './elements/TitleArea'
+import { Header } from './Styled'
 
 const theme = {
   primary: '#009999',
@@ -19,7 +19,7 @@ function Guidance (props) {
       <ThemeProvider theme={theme}>
       <div style={{ height: '100vh', overflow: 'hidden' }}>
         <Nav />
-        <TitleArea style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Please keep in mind...</TitleArea>
+        <Header style={{ fontColor: '#6262B2', textAlign: 'center', fontSize: '28px', fontWeight: 'bold' }}>Please keep in mind...</Header>
         <br/>
         <p className="client-font" style={{ paddingLeft: "200px", paddingRight: "200px", fontSize: "18px", textAlign: 'center' }}>
         This app is for support purposes only. Remember you are speaking to another human who has been through a lot. <br/><br/> 
